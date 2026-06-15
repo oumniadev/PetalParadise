@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetalParadise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0f0;
+            color: #660000;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff6666;
+            color: white;
+            animation: slideInDown 1.5s ease-out;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #cc3333;
+            padding: 10px;
+            animation: fadeIn 2s ease;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffe6e6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px;
+            background-image: url('img/red_flower.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            animation: zoomIn 2s ease;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .testimonial {
+            text-align: center;
+            padding: 40px;
+            background-color: #ffe6e6;
+            color: #660000;
+            animation: fadeIn 2.5s ease;
+        }
+
+        .testimonial h2 {
+            margin-bottom: 20px;
+        }
+
+        .testimonial p {
+            font-style: italic;
+        }
+
+        .events {
+            background-color: #fff5f5;
+            padding: 40px;
+            border-top: 2px solid #ff9999;
+            animation: slideInUp 2s ease;
+        }
+
+        .events h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .events .event {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ffcccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .events .event:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog {
+            background-color: #ffeded;
+            padding: 40px;
+            animation: fadeIn 2s ease;
+        }
+
+        .blog h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .blog-article {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ffcccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-article:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #660000;
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Flower Paradise</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero" id="home">
+        <h1>Experience the Beauty of PetalParadise</h1>
+    </div>
+    <div class="container">
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="img/Anthurium_flower.jpeg" alt="Flower 1">
+                <img src="img/Begonias_flower.jpeg" alt="Flower 2">
+                <img src="img/Birds of Paradise_flower.jpeg" alt=" Flower 3">
+                <img src="img/Bougainvillea_flower.jpeg" alt="Flower 4">
+                <img src="img/Bluebells_flower.jpeg" alt=" Flower 5">
+                <img src="img/Cherry Blossoms_flower.jpeg" alt="Flower 6">
+                <img src="img/Chrysanthemums_flower.jpeg" alt="Flower 7">
+                <img src="img/Daisies_flower.jpeg" alt="Flower 8">
+                <img src="img/Dandelions_flower.jpeg" alt="Flower 9">
+                <img src="img/Hibiscus_flower.jpeg" alt="Flower 10">
+                <img src="img/Hydrangeas_flower.jpeg" alt="Flower 11">
+                <img src="img/Jasmine_flower.jpeg" alt="Flower 12">
+                <img src="img/Lavender_flower.jpeg" alt="Flower 13">
+                <img src="img/Lilacs_flower.jpeg" alt="Flower 14">
+                <img src="img/Lotus_flower.jpeg" alt="Flower 15">
+                <img src="img/Marigolds_flower.jpeg" alt="Flower 16">
+                <img src="img/Orchids_flower.jpeg" alt="Flower 17">
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to PetalParadise!</p>
+
+                <p>We’re so excited you’re here.</p> <p>At PetalParadise, we believe flowers have this amazing way of making any moment feel extra special.</p> <p>Whether it’s a birthday, wedding, or just because, we love creating beautiful bouquets and arrangements that bring joy and warmth.</p>
+                
+                <p>Our flowers are handpicked for their beauty and freshness, and we work with local farmers and trusted suppliers to make sure you get the best.</p> <p>We also care about our planet, so we make sure to use eco-friendly practices whenever we can.</p>
+                
+                <p>We’re all about helping you celebrate life’s moments, big and small, with the perfect flowers.</p> <p>Thanks for choosing us to be a part of your special occasion. We can’t wait to make something beautiful for you! 🌸</p>
+        </section>
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <div class="events">
+                <div class="event">
+                    <h3>RSpring Bloom Workshop</h3>
+                    <p>🌸 Date: Saturday, February 10th, 2024</p>
+                    <p>🌸 Time: 2:00 PM - 4:00 PM</p>
+                    <p>🌸 Location: PetalParadise Floral Studio</p>
+                    <p>Join us for a hands-on workshop where you’ll learn how to create your own stunning spring bouquet! Our expert florists will guide you through selecting the perfect blooms, arranging them beautifully, and adding your own personal touch. Whether you're a beginner or an experienced flower enthusiast, this workshop is for everyone.</p>
+                    <p>Spaces are limited, so be sure to reserve your spot today!</p>
+                </div>
+                <div class="event">
+                    <h3>Valentine's Day Special Floral Sale</h3>
+                    <p>🌸 Date: February 1st - February 14th, 2024</p>
+                    <p>🌸 Location: Online & In-Store</p>
+                    <p>Celebrate love with flowers! For the entire week leading up to Valentine’s Day, enjoy exclusive discounts on our most romantic arrangements. Whether it’s roses, lilies, or something a little more unique, we’ve got the perfect flower to help you express your feelings.</p>
+                    <p>Don’t wait—order early to ensure your flowers arrive on time!</p>
+                </div>
+                <div class="event">
+                    <h3>Mother's Day Flower Arranging Class</h3>
+                    <p>🌸 Date: Sunday, May 12th, 2024</p>
+                    <p>🌸 Time: 11:00 AM - 1:00 PM</p>
+                    <p>🌸 Location: PetalParadise Floral Studio</p>
+                    <p>Celebrate Mom with flowers! Join us for a fun and interactive flower arranging class where you’ll learn how to create the perfect Mother’s Day bouquet. Our florists will walk you through the basics, and you’ll leave with a gorgeous arrangement to gift your mom—or yourself!</p>
+                    <p>Limited spots available. Reserve your seat now!</p>
+                </div>
+                <div class="event">
+                    <h3>PetalParadise Summer Collection Launch</h3>
+                    <p>🌸 Date: Saturday, June 15th, 2024</p>
+                    <p>🌸 Time: 10:00 AM - 5:00 PM</p>
+                    <p>🌸 Location: PetalParadadise Store & Online</p>
+                    <p>Get ready for our vibrant Summer Collection, filled with bright, bold blooms and beautiful new arrangements. Come celebrate the launch with us, explore our new collection, and enjoy exclusive discounts and offers for in-store and online purchases.</p>
+                    <p>It’s the perfect time to refresh your space with the beauty of summer flowers!</p>
+                </div>
+                <div class="event">
+                    <h3>Wedding Floral Design Consultation Day</h3>
+                    <p>🌸 Date: Saturday, April 20th, 2024</p>
+                    <p>🌸 Time: 12:00 PM - 4:00 PM</p>
+                    <p>🌸 Location: PetalParadise Floral Studio</p>
+                    <p>Planning your wedding? Let us help! We’re offering free one-on-one consultations to help you choose the perfect flowers for your big day. Whether you're looking for something classic or unique, we’ll work with you to create the wedding floral design of your dreams.</p>
+                    <p>Book your consultation today—spaces are limited!</p>
+                </div>
+                <div class="event">
+                    <h3>Autumn Floral Pop-Up Market</h3>
+                    <p>🌸 Date: Saturday, October 5th, 2024</p>
+                    <p>🌸 Time: 9:00 AM - 3:00 PM</p>
+                    <p>🌸 Location: PetalParadise & Local Farmers Market</p>
+                    <p>Join us for our Autumn Floral Pop-Up Market, where you can shop for seasonal blooms, dried flower arrangements, and all things fall! Meet local florists, enjoy fun activities, and take home your favorite autumn-inspired floral creations.</p>
+                    <p>Bring a friend and enjoy a day full of flowers, fun, and fall vibes!</p>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials">
+            <h2>What Our Visitors Say</h2>
+            <div class="testimonial">
+                <h2>🌸 Sarah L.</h2>
+                <p>"I absolutely love PetalParadise! The bouquet I ordered for my mom’s birthday was stunning. The flowers were fresh, beautifully arranged, and lasted for days. The team really went above and beyond. I’ll definitely be coming back!"</p>
+            </div>
+            <div class="testimonial">
+                <h2>🌸 James P.</h2>
+                <p>I attended one of their floral workshops, and it was amazing! The florists were so helpful and friendly, and I left with a beautiful arrangement I made myself. Highly recommend it to anyone looking to learn more about flowers!"</p>           
+         </div>
+            <div class="testimonial">
+                <h2>🌸 Emily T.</h2>
+                <p>PetalParadise made my wedding day even more magical! From the bridal bouquet to the centerpieces, every flower was perfect. The team really listened to my vision and brought it to life. Thank you so much!"</p>            
+        </div>
+        <div class="testimonial">
+            <h2>🌸 Mark R.</h2>
+            <p>"I’ve ordered flowers for special occasions from PetalParadise multiple times, and each time, they’ve exceeded my expectations. The quality, the service, everything is top-notch. Definitely my go-to flower shop!"</p>
+        </div>
+    <div class="testimonial">
+        <h2>🌸 Olivia G.</h2>
+        <p>"The best place for flowers, hands down! I love how they care about sustainability and eco-friendly practices. The flowers always look amazing, and it feels great to support a business that cares about the environment."</p>
+    </div>
+        </section>
+        <section id="blog">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog">
+                <div class="blog-article">
+                    <h3>5 Easy Ways to Make Your Flowers Last Longer</h3>
+                    <p>Posted on December 15th, 2024
+                    Discover simple tips to keep your flowers fresh for as long as possible. From trimming stems to changing the water, these easy tricks will help you enjoy your blooms even longer.</p> 
+                    <p>read more-></p>              
+                </div>
+                <div class="blog-article">
+                    <h3>The Best Flowers for Every Occasion</h3>
+                    <p>Posted on December 1st, 2024
+                        Wondering which flowers are perfect for a birthday, anniversary, or wedding? We’ve put together a guide to help you choose the right blooms for any event.</p>
+                    <p>read more-></p>
+                </div>
+                <div class="blog-article">
+                    <h3>How to Create Your Own Floral Arrangements at Home</h3>
+                    <p>Posted on November 20th, 2024
+                        Learn the basics of floral design and create your own stunning arrangements right at home. Whether you're a beginner or an expert, these tips will help you craft the perfect bouquet.</p>
+                    <p>read more-></p>
+                </div>
+                <div class="blog-article">
+                    <h3>Sustainable Flower Sourcing: Why It Matters</h3>
+                    <p>Posted on November 5th, 2024
+                        At PetalParadise, we’re passionate about the planet. Find out how we source our flowers sustainably and why it’s important for both the environment and your floral arrangements.</p>
+                    <p>read more-></p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Whether you have a question, need help with an order, or just want to say hello, we’re here for you.</p>
+
+                <p>📍 Address:
+                PetalParadise Floral Studio
+                123 Bloom Lane, Flower City, FL 45678</p>
+                
+                <p>📞 Phone:
+                +1 (123) 456-7890</p>
+                
+                <p>📧 Email:
+                hello@petalparadise.com</p>
+                
+               <p> ⏰ Business Hours:</p>
+                
+                <p>Monday to Friday: 9:00 AM – 6:00 PM
+                Saturday: 10:00 AM – 4:00 PM
+                Sunday: Closed</p>
+                <p>🌐 Follow Us:
+                Stay connected and get inspired!</p>
+                
+                <p>Instagram: <a href="@PetalParadise">@PetalParadise</a></p>
+                <p>Facebook: <a href=" PetalParadise"> PetalParadise</a></p>
+                <p>Pinterest: <a href="PetalParadise">PetalParadise</a></p>
+                <p>📝 Send Us a Message:</p>
+                <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+                <p>Fill out the form below, and we’ll get back to you as soon as possible!
+                </p>
+                <button type="submit">Send Message</button>
+        </section>
+    </div>
+    <footer style="background-color: #f4f4f4; padding: 20px; text-align: center; font-family: Arial, sans-serif; margin-top: 20px;">
+        <div>
+          <p style="font-size: 18px; color: #333;">🌸 Thank you for visiting <strong>PetalParadise</strong> 🌸</p>
+          <p style="color: #666; margin: 5px 0;">Bringing joy, one petal at a time. 🌼</p>
+        </div>
+      
+        <div style="margin: 10px 0;">
+          <a href="#" style="margin: 0 10px; text-decoration: none; color: #333;">Home</a> | 
+          <a href="#" style="margin: 0 10px; text-decoration: none; color: #333;">Shop</a> | 
+          <a href="#" style="margin: 0 10px; text-decoration: none; color: #333;">Contact</a> | 
+          <a href="#" style="margin: 0 10px; text-decoration: none; color: #333;">About</a>
+        </div>
+      
+        <div style="margin-top: 10px;">
+          <p style="color: #999; font-size: 14px;">© 2024 PetalParadise. All rights reserved. 🌺</p>
+        </div>
+      
+        <div style="margin-top: 10px;">
+          <a href="#" style="margin: 0 10px; text-decoration: none;">
+            <img src="img/intagram_icon.jpg" alt="Instagram" style="width: 20px; height: 20px;">
+          </a>
+          <a href="#" style="margin: 0 10px; text-decoration: none;">
+            <img src="img/faccebook_icon.jpg" alt="Facebook" style="width: 20px; height: 20px;">
+          </a>
+          <a href="#" style="margin: 0 10px; text-decoration: none;">
+            <img src="img/pinterst_icon.jpg" alt="Pinterest" style="width: 20px; height: 20px;">
+          </a>
+        </div>
+      </footer>
+</body>
+</html>
